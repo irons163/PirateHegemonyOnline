@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -11,6 +12,7 @@
             <connections>
                 <outlet property="getRandomClassMusketeerButton" destination="Qyg-ft-Bsj" id="Hpn-4h-ETk"/>
                 <outlet property="getSClassMusketeerButton" destination="4Al-TF-Um4" id="ewI-Qg-mef"/>
+                <outlet property="totalPowerLabel" destination="09v-NP-Fsr" id="290-qS-KQX"/>
                 <outlet property="videoHolderView" destination="7no-wd-k4H" id="OoT-kY-SOv"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -29,18 +31,27 @@
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fB1-3R-9hH">
                                     <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gea-ht-BGQ">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="海賊爭霸Online" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gea-ht-BGQ">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gun" translatesAutoresizingMaskIntoConstraints="NO" id="jJp-Yn-fhJ">
+                                            <rect key="frame" x="30" y="5" width="34" height="34"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="jJp-Yn-fhJ" secondAttribute="height" multiplier="1:1" id="Daq-iL-tuB"/>
+                                            </constraints>
+                                        </imageView>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
+                                        <constraint firstItem="jJp-Yn-fhJ" firstAttribute="top" secondItem="fB1-3R-9hH" secondAttribute="top" constant="5" id="3En-Aa-GAs"/>
                                         <constraint firstAttribute="trailing" secondItem="Gea-ht-BGQ" secondAttribute="trailing" id="DSh-5e-NFW"/>
+                                        <constraint firstAttribute="bottom" secondItem="jJp-Yn-fhJ" secondAttribute="bottom" constant="5" id="OEY-2l-Yuy"/>
                                         <constraint firstItem="Gea-ht-BGQ" firstAttribute="leading" secondItem="fB1-3R-9hH" secondAttribute="leading" id="QN3-jC-PK0"/>
                                         <constraint firstAttribute="bottom" secondItem="Gea-ht-BGQ" secondAttribute="bottom" id="Xnm-LH-cR8"/>
                                         <constraint firstItem="Gea-ht-BGQ" firstAttribute="top" secondItem="fB1-3R-9hH" secondAttribute="top" id="bip-QZ-hOj"/>
+                                        <constraint firstItem="jJp-Yn-fhJ" firstAttribute="leading" secondItem="fB1-3R-9hH" secondAttribute="leading" constant="30" id="gDm-V2-7s4"/>
                                         <constraint firstAttribute="height" constant="44" id="jWj-uI-NgE"/>
                                     </constraints>
                                 </view>
@@ -60,24 +71,28 @@
                             </constraints>
                         </view>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Nr7-6f-TYQ">
-                            <rect key="frame" x="30" y="333" width="315" height="44"/>
+                            <rect key="frame" x="30" y="333" width="315" height="52"/>
                             <subviews>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Al-TF-Um4">
-                                    <rect key="frame" x="0.0" y="0.0" width="315" height="44"/>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Al-TF-Um4">
+                                    <rect key="frame" x="0.0" y="0.0" width="315" height="52"/>
                                     <color key="backgroundColor" red="0.16862745100000001" green="0.20784313730000001" blue="0.58823529409999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
-                                    <state key="normal" title="領取你的 S級火槍兵">
+                                    <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                    <inset key="contentEdgeInsets" minX="0.0" minY="10" maxX="0.0" maxY="10"/>
+                                    <inset key="imageEdgeInsets" minX="-40" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    <state key="normal" title="領取你的 S級火槍兵" image="pirate">
                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </state>
                                     <connections>
                                         <action selector="getSClassMusketeerButtonClick:" destination="-1" eventType="touchUpInside" id="9tR-yB-f9L"/>
                                     </connections>
                                 </button>
-                                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qyg-ft-Bsj">
+                                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qyg-ft-Bsj">
                                     <rect key="frame" x="0.0" y="0.0" width="315" height="0.0"/>
                                     <color key="backgroundColor" red="0.16862745100000001" green="0.20784313730000001" blue="0.58823529409999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
-                                    <state key="normal" title="軍團招喚！抽卡">
+                                    <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                    <inset key="contentEdgeInsets" minX="0.0" minY="10" maxX="0.0" maxY="10"/>
+                                    <inset key="imageEdgeInsets" minX="-80" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    <state key="normal" title="軍團招喚！抽卡" image="pirate">
                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </state>
                                     <connections>
@@ -86,13 +101,20 @@
                                 </button>
                             </subviews>
                         </stackView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="09v-NP-Fsr">
+                            <rect key="frame" x="160.66666666666666" y="395" width="54" height="25.333333333333314"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                            <color key="textColor" red="0.95686274510000002" green="0.26274509800000001" blue="0.21176470589999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="oEQ-W6-bOp">
                             <rect key="frame" x="30" y="548" width="315" height="184"/>
                             <subviews>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MGX-Ma-GIt">
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MGX-Ma-GIt">
                                     <rect key="frame" x="0.0" y="0.0" width="315" height="48"/>
                                     <color key="backgroundColor" red="0.16862745098039217" green="0.20784313725490194" blue="0.58823529411764708" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <state key="normal" title="開始與全世界玩家PK吧！">
+                                    <inset key="imageEdgeInsets" minX="-38" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    <state key="normal" title="開始與全世界玩家PK吧！" image="battle">
                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </state>
                                     <connections>
@@ -127,6 +149,8 @@
                     </subviews>
                     <color key="backgroundColor" red="0.16470588235294117" green="0.70980392156862748" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
+                        <constraint firstItem="09v-NP-Fsr" firstAttribute="centerX" secondItem="d44-Id-vL0" secondAttribute="centerX" id="6e3-Ck-12D"/>
+                        <constraint firstItem="09v-NP-Fsr" firstAttribute="top" secondItem="Nr7-6f-TYQ" secondAttribute="bottom" constant="10" id="9pO-4J-Zjm"/>
                         <constraint firstItem="zwm-nw-ctE" firstAttribute="top" secondItem="d44-Id-vL0" secondAttribute="top" id="DmR-gs-OYz"/>
                         <constraint firstItem="Nr7-6f-TYQ" firstAttribute="leading" secondItem="d44-Id-vL0" secondAttribute="leading" constant="30" id="F1r-Yg-gHi"/>
                         <constraint firstAttribute="bottom" secondItem="oEQ-W6-bOp" secondAttribute="bottom" constant="80" id="H4j-fP-irD"/>
@@ -155,7 +179,10 @@
         </view>
     </objects>
     <resources>
+        <image name="battle" width="32" height="32"/>
+        <image name="gun" width="32" height="32"/>
         <image name="igotallday" width="48" height="48"/>
+        <image name="pirate" width="32" height="32"/>
         <image name="taiwantrilogy" width="48" height="48"/>
     </resources>
 </document>

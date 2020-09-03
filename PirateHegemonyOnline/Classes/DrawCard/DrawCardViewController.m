@@ -10,11 +10,14 @@
 #import "GameCenterUtil.h"
 #import "DBManager.h"
 #import "ArmFactory.h"
+#import "ArmUtility.h"
 
 @interface DrawCardViewController ()
 
 @property (weak, nonatomic) IBOutlet UILabel *nameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *categoryLabel;
+@property (weak, nonatomic) IBOutlet UIView *categoryView;
+@property (weak, nonatomic) IBOutlet UIView *nameView;
 @property (weak, nonatomic) IBOutlet UILabel *atkLabel;
 
 - (IBAction)dimissButtonClick:(id)sender;
@@ -27,11 +30,16 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
-    Arm *arm = nil;
-    if (self.drawSClassCard) {
-        arm = [ArmFactory createNewMusketeerWithSpecificCategory:S_Class];
-    } else {
-        arm = [ArmFactory createNewMusketeer];
+    Arm *arm = _displayArm;
+    if (arm == nil) {
+        if (self.drawSClassCard) {
+            arm = [ArmFactory createNewMusketeerWithSpecificCategory:S_Class];
+        } else {
+            arm = [ArmFactory createNewMusketeer];
+        }
+        
+        GameCenterUtil * gameCenterUtil = [GameCenterUtil sharedInstance];
+        [gameCenterUtil reportScore:[[DBManager sharedInstance] getTotalPower] forCategory:@"com.irons.PirateHegemonyOnline"];
     }
     
     self.nameLabel.text = @"火槍兵";
@@ -59,10 +67,8 @@
     }
     
     self.categoryLabel.text = categoryStr;
+    self.nameLabel.textColor = self.categoryLabel.textColor = [ArmUtility getArmCategoryColorFromArm:arm];
     self.atkLabel.text = [NSString stringWithFormat:@"%@%lld", @"ATK:", arm.atk];
-    
-    GameCenterUtil * gameCenterUtil = [GameCenterUtil sharedInstance];
-    [gameCenterUtil reportScore:[[DBManager sharedInstance] getTotalPower] forCategory:@"com.irons.PirateHegemonyOnline"];
 }
 
 /*
@@ -77,6 +83,7 @@
 
 - (IBAction)dimissButtonClick:(id)sender {
     [self dismissViewControllerAnimated:YES completion:nil];
+    [self.delegate didClose];
 }
 
 @end

@@ -12,7 +12,11 @@
 
 - (void)awakeFromNib {
     [super awakeFromNib];
-    // Initialization code
+    
+}
+
++ (NSString *)identifier {
+    return [[self class] description];
 }
 
 @end

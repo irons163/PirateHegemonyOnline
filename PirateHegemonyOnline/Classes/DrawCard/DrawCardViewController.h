@@ -8,11 +8,20 @@
 
 #import <UIKit/UIKit.h>
 #import "ArmCategory.h"
+#import "Arm+CoreDataClass.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
+@protocol DrawCardViewControllerDelegate <NSObject>
+
+- (void)didClose;
+
+@end
+
 @interface DrawCardViewController : UIViewController
 
+@property (weak) id<DrawCardViewControllerDelegate> delegate;
+@property (nullable) Arm *displayArm;
 @property BOOL drawSClassCard;
 
 @end

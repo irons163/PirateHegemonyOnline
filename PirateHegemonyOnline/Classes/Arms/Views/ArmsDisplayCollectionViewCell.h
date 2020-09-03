@@ -12,6 +12,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface ArmsDisplayCollectionViewCell : UICollectionViewCell
 
+@property (weak, nonatomic) IBOutlet UILabel *categoryLabel;
+@property (weak, nonatomic) IBOutlet UILabel *atkLabel;
+
++ (NSString *)identifier;
+
 @end
 
 NS_ASSUME_NONNULL_END

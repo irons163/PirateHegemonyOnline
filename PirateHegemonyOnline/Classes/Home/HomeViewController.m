@@ -13,7 +13,7 @@
 #import "AppDelegate.h"
 #import <AVKit/AVKit.h>
 
-@interface HomeViewController () {
+@interface HomeViewController ()<DrawCardViewControllerDelegate> {
     AVPlayerLooper *playerLooper;
 }
 
@@ -23,6 +23,7 @@
 
 @property (weak, nonatomic) IBOutlet UIButton *getSClassMusketeerButton;
 @property (weak, nonatomic) IBOutlet UIButton *getRandomClassMusketeerButton;
+@property (weak, nonatomic) IBOutlet UILabel *totalPowerLabel;
 
 - (IBAction)getSClassMusketeerButtonClick:(id)sender;
 - (IBAction)getRandomClassMusketeerClick:(id)sender;
@@ -39,8 +40,6 @@
     
     self.navigationController.navigationBar.hidden = YES;
     
-//    NSString *webStringURL = [@"https://reurl.cc/Oqp46D" stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
-//    NSString *webStringURL = [@"https://www.radiantmediaplayer.com/media/big-buck-bunny-360p.mp4" stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
     NSURL *videoURL = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"video" ofType:@"mp4"]];
     self.avPlayer = [[AVQueuePlayer alloc] init];
     [self.avPlayer addObserver:self forKeyPath:@"status" options:0 context:nil];
@@ -56,6 +55,19 @@
     [self.videoHolderView.layer addSublayer:playerLayer];
     self.videoHolderView.layer.needsDisplayOnBoundsChange = YES;
     
+    [self updateUI];
+    
+    GameCenterUtil * gameCenterUtil = [GameCenterUtil sharedInstance];
+    [gameCenterUtil isGameCenterAvailable];
+    [gameCenterUtil authenticateLocalUser:self];
+    [gameCenterUtil submitAllSavedScores];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+}
+
+- (void)updateUI {
     NSInteger totalPower = [[DBManager sharedInstance] getTotalPower];
     if (totalPower == 0) {
         self.getSClassMusketeerButton.hidden = NO;
@@ -64,19 +76,7 @@
         self.getSClassMusketeerButton.hidden = YES;
         self.getRandomClassMusketeerButton.hidden = NO;
     }
-    
-//    GameCenterUtil * gameCenterUtil = [GameCenterUtil sharedInstance];
-//    [gameCenterUtil isGameCenterAvailable];
-//    [gameCenterUtil authenticateLocalUser:self];
-//    [gameCenterUtil submitAllSavedScores];
-}
-
-- (void)showRankViewController {
-    GameCenterUtil * gameCenterUtil = [GameCenterUtil sharedInstance];
-    [gameCenterUtil isGameCenterAvailable];
-//    [gameCenterUtil authenticateLocalUser:self];
-    [gameCenterUtil showGameCenter:self];
-    [gameCenterUtil submitAllSavedScores];
+    self.totalPowerLabel.text = [NSString stringWithFormat:@"當前總戰力：%ld", [DBManager sharedInstance].getTotalPower];
 }
 
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object
@@ -106,27 +106,39 @@
     DrawCardViewController *drawCardViewController = [[DrawCardViewController alloc] init];
     drawCardViewController.modalPresentationStyle = UIModalPresentationOverCurrentContext|UIModalPresentationFullScreen;
     drawCardViewController.drawSClassCard = YES;
+    drawCardViewController.delegate = self;
     AppDelegate* appDelegate = (AppDelegate*)[[UIApplication sharedApplication] delegate];
-    [appDelegate.window.rootViewController presentViewController:drawCardViewController animated:YES completion:nil];
+    [appDelegate.window.rootViewController presentViewController:drawCardViewController animated:YES completion:^{
+        
+    }];
 }
 
 - (IBAction)getRandomClassMusketeerClick:(id)sender {
     DrawCardViewController *drawCardViewController = [[DrawCardViewController alloc] init];
     drawCardViewController.modalPresentationStyle = UIModalPresentationOverCurrentContext|UIModalPresentationFullScreen;
+    drawCardViewController.delegate = self;
     AppDelegate* appDelegate = (AppDelegate*)[[UIApplication sharedApplication] delegate];
     [appDelegate.window.rootViewController presentViewController:drawCardViewController animated:YES completion:nil];
 }
 
 - (IBAction)showYoutubeVideoButtonClick:(id)sender {
-    
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://www.youtube.com/watch?v=LUaYe_7cmxQ"] options: @{} completionHandler: nil];
 }
 
 - (IBAction)showTaiwantrilogyWebButtonClick:(id)sender {
-    
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://taiwantrilogy.com/"] options: @{} completionHandler: nil];
 }
 
 - (IBAction)showGameCenterButtonClick:(id)sender {
-    
+    GameCenterUtil * gameCenterUtil = [GameCenterUtil sharedInstance];
+    [gameCenterUtil isGameCenterAvailable];
+//    [gameCenterUtil authenticateLocalUser:self];
+    [gameCenterUtil showGameCenter:self];
+    [gameCenterUtil submitAllSavedScores];
+}
+
+- (void)didClose {
+    [self updateUI];
 }
 
 @end

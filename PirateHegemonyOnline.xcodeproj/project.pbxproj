@@ -20,20 +20,22 @@
 		B50901512500F6550013B6BE /* Arm+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = B509014F2500F6550013B6BE /* Arm+CoreDataProperties.m */; };
 		B50901542500FA730013B6BE /* ArmFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = B50901532500FA730013B6BE /* ArmFactory.m */; };
 		B509015725013C930013B6BE /* video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B509015625013C920013B6BE /* video.mp4 */; };
+		B5090159250151870013B6BE /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5090158250151870013B6BE /* GameKit.framework */; };
+		B509015D2501529F0013B6BE /* ArmsDisplayCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B509015B2501529F0013B6BE /* ArmsDisplayCollectionViewController.m */; };
+		B509015E2501529F0013B6BE /* ArmsDisplayCollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B509015C2501529F0013B6BE /* ArmsDisplayCollectionViewController.xib */; };
+		B5090162250161CD0013B6BE /* ArmUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = B5090161250161CD0013B6BE /* ArmUtility.m */; };
+		B516850E250181CC00F393F7 /* RoundCornerView.m in Sources */ = {isa = PBXBuildFile; fileRef = B516850C250181CB00F393F7 /* RoundCornerView.m */; };
 		B5DD14F725008CF500E5F9F0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B5DD14F625008CF500E5F9F0 /* AppDelegate.m */; };
 		B5DD14FD25008CF500E5F9F0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5DD14FC25008CF500E5F9F0 /* ViewController.m */; };
 		B5DD150225008CF700E5F9F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5DD150125008CF700E5F9F0 /* Assets.xcassets */; };
 		B5DD150525008CF700E5F9F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5DD150325008CF700E5F9F0 /* LaunchScreen.storyboard */; };
 		B5DD150825008CF700E5F9F0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B5DD150725008CF700E5F9F0 /* main.m */; };
-		B5DD15142500915B00E5F9F0 /* ArmsDisplayCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5DD15122500915B00E5F9F0 /* ArmsDisplayCollectionViewController.m */; };
-		B5DD15152500915B00E5F9F0 /* ArmsDisplayCollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5DD15132500915B00E5F9F0 /* ArmsDisplayCollectionViewController.xib */; };
 		B5DD1521250092B200E5F9F0 /* ArmsDisplayViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B5DD1520250092B200E5F9F0 /* ArmsDisplayViewModel.m */; };
 		B5DD1525250092F300E5F9F0 /* ArmsDisplayCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B5DD1523250092F300E5F9F0 /* ArmsDisplayCollectionViewCell.m */; };
 		B5DD1526250092F300E5F9F0 /* ArmsDisplayCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5DD1524250092F300E5F9F0 /* ArmsDisplayCollectionViewCell.xib */; };
 		B5DD152C2500976100E5F9F0 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5DD152A2500976100E5F9F0 /* HomeViewController.m */; };
 		B5DD152D2500976100E5F9F0 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5DD152B2500976100E5F9F0 /* HomeViewController.xib */; };
 		B5DD15392500B7BF00E5F9F0 /* RootTabButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B5DD15382500B7BF00E5F9F0 /* RootTabButton.m */; };
-		F06B73B970DA59DCFD95FB78 /* Pods_PirateHegemonyOnline.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4665EF604FA4907AA98A2164 /* Pods_PirateHegemonyOnline.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,7 +67,16 @@
 		B50901532500FA730013B6BE /* ArmFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArmFactory.m; sourceTree = "<group>"; };
 		B50901552500FBA90013B6BE /* ArmCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArmCategory.h; sourceTree = "<group>"; };
 		B509015625013C920013B6BE /* video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video.mp4; sourceTree = "<group>"; };
-		B5DD14F225008CF500E5F9F0 /* PirateHegemonyOnline.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PirateHegemonyOnline.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5090158250151870013B6BE /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+		B509015A2501529F0013B6BE /* ArmsDisplayCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArmsDisplayCollectionViewController.h; sourceTree = "<group>"; };
+		B509015B2501529F0013B6BE /* ArmsDisplayCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArmsDisplayCollectionViewController.m; sourceTree = "<group>"; };
+		B509015C2501529F0013B6BE /* ArmsDisplayCollectionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArmsDisplayCollectionViewController.xib; sourceTree = "<group>"; };
+		B509015F250155760013B6BE /* ArmsDisplayViewSectionType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArmsDisplayViewSectionType.h; sourceTree = "<group>"; };
+		B5090160250161CD0013B6BE /* ArmUtility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArmUtility.h; sourceTree = "<group>"; };
+		B5090161250161CD0013B6BE /* ArmUtility.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArmUtility.m; sourceTree = "<group>"; };
+		B516850C250181CB00F393F7 /* RoundCornerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoundCornerView.m; sourceTree = "<group>"; };
+		B516850D250181CB00F393F7 /* RoundCornerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoundCornerView.h; sourceTree = "<group>"; };
+		B5DD14F225008CF500E5F9F0 /* 海賊爭霸Online.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "海賊爭霸Online.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5DD14F525008CF500E5F9F0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B5DD14F625008CF500E5F9F0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		B5DD14FB25008CF500E5F9F0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
@@ -74,9 +85,6 @@
 		B5DD150425008CF700E5F9F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B5DD150625008CF700E5F9F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B5DD150725008CF700E5F9F0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		B5DD15112500915B00E5F9F0 /* ArmsDisplayCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArmsDisplayCollectionViewController.h; sourceTree = "<group>"; };
-		B5DD15122500915B00E5F9F0 /* ArmsDisplayCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArmsDisplayCollectionViewController.m; sourceTree = "<group>"; };
-		B5DD15132500915B00E5F9F0 /* ArmsDisplayCollectionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArmsDisplayCollectionViewController.xib; sourceTree = "<group>"; };
 		B5DD151F250092B200E5F9F0 /* ArmsDisplayViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArmsDisplayViewModel.h; sourceTree = "<group>"; };
 		B5DD1520250092B200E5F9F0 /* ArmsDisplayViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArmsDisplayViewModel.m; sourceTree = "<group>"; };
 		B5DD1522250092F300E5F9F0 /* ArmsDisplayCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArmsDisplayCollectionViewCell.h; sourceTree = "<group>"; };
@@ -94,7 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F06B73B970DA59DCFD95FB78 /* Pods_PirateHegemonyOnline.framework in Frameworks */,
+				B5090159250151870013B6BE /* GameKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,6 +121,7 @@
 		58538B4D0BB771F3EC6C5411 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B5090158250151870013B6BE /* GameKit.framework */,
 				4665EF604FA4907AA98A2164 /* Pods_PirateHegemonyOnline.framework */,
 			);
 			name = Frameworks;
@@ -151,7 +160,7 @@
 		B5DD14F325008CF500E5F9F0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B5DD14F225008CF500E5F9F0 /* PirateHegemonyOnline.app */,
+				B5DD14F225008CF500E5F9F0 /* 海賊爭霸Online.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -177,7 +186,6 @@
 			children = (
 				B5DD15352500B75F00E5F9F0 /* Root */,
 				B5DD15282500973100E5F9F0 /* Home */,
-				B5DD1527250093BA00E5F9F0 /* GameCenter */,
 				B5DD15102500907800E5F9F0 /* Arms */,
 				B50901302500E7B30013B6BE /* DrawCard */,
 			);
@@ -195,6 +203,10 @@
 				B50901292500DA5D0013B6BE /* UIColor+Helper.m */,
 				B50901362500F1040013B6BE /* GameCenterUtil.h */,
 				B50901372500F1050013B6BE /* GameCenterUtil.m */,
+				B5090160250161CD0013B6BE /* ArmUtility.h */,
+				B5090161250161CD0013B6BE /* ArmUtility.m */,
+				B516850D250181CB00F393F7 /* RoundCornerView.h */,
+				B516850C250181CB00F393F7 /* RoundCornerView.m */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -205,9 +217,9 @@
 				B5DD1518250091CF00E5F9F0 /* ModelViews */,
 				B5DD15172500919700E5F9F0 /* Views */,
 				B5DD15162500918E00E5F9F0 /* Models */,
-				B5DD15112500915B00E5F9F0 /* ArmsDisplayCollectionViewController.h */,
-				B5DD15122500915B00E5F9F0 /* ArmsDisplayCollectionViewController.m */,
-				B5DD15132500915B00E5F9F0 /* ArmsDisplayCollectionViewController.xib */,
+				B509015A2501529F0013B6BE /* ArmsDisplayCollectionViewController.h */,
+				B509015B2501529F0013B6BE /* ArmsDisplayCollectionViewController.m */,
+				B509015C2501529F0013B6BE /* ArmsDisplayCollectionViewController.xib */,
 			);
 			path = Arms;
 			sourceTree = "<group>";
@@ -245,15 +257,9 @@
 			children = (
 				B5DD151F250092B200E5F9F0 /* ArmsDisplayViewModel.h */,
 				B5DD1520250092B200E5F9F0 /* ArmsDisplayViewModel.m */,
+				B509015F250155760013B6BE /* ArmsDisplayViewSectionType.h */,
 			);
 			path = ModelViews;
-			sourceTree = "<group>";
-		};
-		B5DD1527250093BA00E5F9F0 /* GameCenter */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = GameCenter;
 			sourceTree = "<group>";
 		};
 		B5DD15282500973100E5F9F0 /* Home */ = {
@@ -304,7 +310,7 @@
 			);
 			name = PirateHegemonyOnline;
 			productName = PirateHegemonyOnline;
-			productReference = B5DD14F225008CF500E5F9F0 /* PirateHegemonyOnline.app */;
+			productReference = B5DD14F225008CF500E5F9F0 /* 海賊爭霸Online.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -344,10 +350,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5DD15152500915B00E5F9F0 /* ArmsDisplayCollectionViewController.xib in Resources */,
 				B5DD150525008CF700E5F9F0 /* LaunchScreen.storyboard in Resources */,
 				B5DD1526250092F300E5F9F0 /* ArmsDisplayCollectionViewCell.xib in Resources */,
 				B5DD150225008CF700E5F9F0 /* Assets.xcassets in Resources */,
+				B509015E2501529F0013B6BE /* ArmsDisplayCollectionViewController.xib in Resources */,
 				B509015725013C930013B6BE /* video.mp4 in Resources */,
 				B50901352500E7FD0013B6BE /* DrawCardViewController.xib in Resources */,
 				B5DD152D2500976100E5F9F0 /* HomeViewController.xib in Resources */,
@@ -407,10 +413,11 @@
 				B509012C2500DA5D0013B6BE /* UIColor+Helper.m in Sources */,
 				B509014B2500F64A0013B6BE /* Arm+CoreDataClass.m in Sources */,
 				B50901342500E7FD0013B6BE /* DrawCardViewController.m in Sources */,
-				B5DD15142500915B00E5F9F0 /* ArmsDisplayCollectionViewController.m in Sources */,
+				B509015D2501529F0013B6BE /* ArmsDisplayCollectionViewController.m in Sources */,
 				B5DD14FD25008CF500E5F9F0 /* ViewController.m in Sources */,
 				B509013F2500F4320013B6BE /* PirateHegemonyOnline.xcdatamodeld in Sources */,
 				B50901382500F1050013B6BE /* GameCenterUtil.m in Sources */,
+				B516850E250181CC00F393F7 /* RoundCornerView.m in Sources */,
 				B50901542500FA730013B6BE /* ArmFactory.m in Sources */,
 				B509014A2500F64A0013B6BE /* Arm+CoreDataProperties.m in Sources */,
 				B509013C2500F29D0013B6BE /* DBManager.m in Sources */,
@@ -418,6 +425,7 @@
 				B5DD14F725008CF500E5F9F0 /* AppDelegate.m in Sources */,
 				B509012F2500E0AD0013B6BE /* Utilities.m in Sources */,
 				B5DD150825008CF700E5F9F0 /* main.m in Sources */,
+				B5090162250161CD0013B6BE /* ArmUtility.m in Sources */,
 				B5DD1525250092F300E5F9F0 /* ArmsDisplayCollectionViewCell.m in Sources */,
 				B50901502500F6550013B6BE /* Arm+CoreDataClass.m in Sources */,
 				B5DD15392500B7BF00E5F9F0 /* RootTabButton.m in Sources */,
@@ -554,16 +562,19 @@
 			baseConfigurationReference = 4DCAD6A25882BE9B448689A3 /* Pods-PirateHegemonyOnline.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.0.2009040;
 				DEVELOPMENT_TEAM = T6VV6T753H;
 				INFOPLIST_FILE = PirateHegemonyOnline/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = irons163.PirateHegemonyOnline;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.irons.PirateHegemonyOnline;
+				PRODUCT_NAME = "海賊爭霸Online";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -573,16 +584,19 @@
 			baseConfigurationReference = 901379C01D667D4772DDD6F7 /* Pods-PirateHegemonyOnline.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.0.2009040;
 				DEVELOPMENT_TEAM = T6VV6T753H;
 				INFOPLIST_FILE = PirateHegemonyOnline/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = irons163.PirateHegemonyOnline;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.irons.PirateHegemonyOnline;
+				PRODUCT_NAME = "海賊爭霸Online";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

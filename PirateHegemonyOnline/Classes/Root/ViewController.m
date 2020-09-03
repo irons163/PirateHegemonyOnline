@@ -36,7 +36,6 @@
     self.tabbedDelegate = self;
     
     if(!self.tabBarView){
-//        tabBarView = [[MSSTabBarView alloc] initWithFrame:CGRectMake(0, 0, 140, 55)];
         tabBarView = [[IRTabBarView alloc] init];
         [self.view addSubview:tabBarView];
         CGFloat barHeight = 55;
@@ -81,22 +80,22 @@
     singleButtonGroup.delegate = self;
     
     NSMutableArray *tabButtons = [NSMutableArray array];
-    RootTabButton* apTabButton = [RootTabButton buttonWithType:UIButtonTypeCustom];
-    [apTabButton setTitle:@"Home" forState:UIControlStateNormal];
-    UIImage *homeIcon = [Utilities imageWithImage:[UIImage imageNamed:@"catapult"] scaledToSize:CGSizeMake(20, 20)];
-    [apTabButton setImage:homeIcon forState:UIControlStateNormal];
-    [apTabButton addTarget:self action:@selector(tabButtonClick:) forControlEvents:UIControlEventTouchUpInside];
-    [tabButtons addObject:apTabButton];
+    RootTabButton* homeTabButton = [RootTabButton buttonWithType:UIButtonTypeCustom];
+    [homeTabButton setTitle:@"Home" forState:UIControlStateNormal];
+    UIImage *homeIcon = [Utilities imageWithImage:[UIImage imageNamed:@"home"] scaledToSize:CGSizeMake(22, 22)];
+    [homeTabButton setImage:homeIcon forState:UIControlStateNormal];
+    [homeTabButton addTarget:self action:@selector(tabButtonClick:) forControlEvents:UIControlEventTouchUpInside];
+    [tabButtons addObject:homeTabButton];
     
     
-    RootTabButton* enSkyTabButton = [RootTabButton buttonWithType:UIButtonTypeCustom];
-    [enSkyTabButton setTitle:@"Arm" forState:UIControlStateNormal];
-    [enSkyTabButton setImage:homeIcon forState:UIControlStateNormal];
-    [enSkyTabButton addTarget:self action:@selector(tabButtonClick:) forControlEvents:UIControlEventTouchUpInside];
-    [tabButtons addObject:enSkyTabButton];
+    RootTabButton* catapultTabButton = [RootTabButton buttonWithType:UIButtonTypeCustom];
+    [catapultTabButton setTitle:@"Arm" forState:UIControlStateNormal];
+    UIImage *catapultIcon = [Utilities imageWithImage:[UIImage imageNamed:@"catapult"] scaledToSize:CGSizeMake(22, 22)];
+    [catapultTabButton setImage:catapultIcon forState:UIControlStateNormal];
+    [catapultTabButton addTarget:self action:@selector(tabButtonClick:) forControlEvents:UIControlEventTouchUpInside];
+    [tabButtons addObject:catapultTabButton];
     
     singleButtonGroup.buttons = [NSArray arrayWithArray:tabButtons];
-//    [singleButtonGroup selected:singleButtonGroup.buttons[self.currentPage < 0 ? 0 : self.currentPage]];
     [singleButtonGroup setInitSelected:singleButtonGroup.buttons[self.currentPage < 0 ? 0 : self.currentPage]];
 }
 
@@ -153,7 +152,7 @@
 }
 
 #pragma mark - UITabBarControllerDelegate
--(void)ir_tabbedController:(IRTabbedPageViewControllerImp *)tabbedPageViewController didSelectIndex:(NSInteger)index {
+-(void)IR_tabbedController:(IRTabbedPageViewControllerImp *)tabbedPageViewController didSelectIndex:(NSInteger)index {
     [tabbedPageViewController.tabBarView setTabIndex:index animated:YES];
 }
 

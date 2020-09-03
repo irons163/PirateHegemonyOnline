@@ -7,10 +7,30 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <IRCollectionTableViewModel/IRCollectionTableViewModel.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ArmsDisplayViewModel : NSObject
+typedef NS_ENUM(NSInteger, ArmCollectionViewItemType){
+    ItemType_Arm
+};
+
+@interface CollectionViewItem : RowBasicModelItem
+@property (readonly) ArmCollectionViewItemType type;
+@end
+
+@interface CollectionViewSectionItem : SectionBasicModelItem
+@property (nonatomic) NSString* sectionTitle;
+@property (nonatomic) SectionType type;
+@end
+
+@interface ArmsDisplayViewModel : TableViewBasicViewModel<UICollectionViewDataSource>
+
+@property (nonatomic) NSArray *arms;
+
+- (instancetype)initWithCollectionView:(UICollectionView*)collectionView;
+
+- (void)update;
 
 @end
 

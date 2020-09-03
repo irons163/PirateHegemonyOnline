@@ -41,6 +41,8 @@
         [self setContentEdgeInsets:UIEdgeInsetsMake(0, 0, 0, 0)];
     }
     
+    [self setImageEdgeInsets:UIEdgeInsetsMake(0, -10, 0, 10)];
+    
     UIColor *bgColor = [UIColor colorWithColorCodeString:@"F6F6F6"];
     self.backgroundColor = bgColor;
 
@@ -61,10 +63,10 @@
     [self addSubview:indicatorView];
     
     [indicatorView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(self).offset(-1);
+        make.top.equalTo(self).offset(1);
         make.left.equalTo(self.titleLabel).offset(3);
         make.right.equalTo(self.titleLabel).offset(-3);
-        make.height.mas_equalTo(5);
+        make.height.mas_equalTo(6);
     }];
 }
      

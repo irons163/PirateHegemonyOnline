@@ -24,16 +24,17 @@
 
 + (ArmCategory)getRandomCategory {
     ArmCategory category = E_Class;
-    NSInteger random = arc4random_uniform(10000000);
-    if (random < 99) {
+    uint32_t base = 10000000;
+    NSInteger random = arc4random_uniform(base);
+    if (random < base * 0.005) {
         category = S_Class;
-    } else if (random < 999) {
+    } else if (random < base * 0.05) {
         category = A_Class;
-    } else if (random < 9999) {
+    } else if (random < base * 0.15) {
         category = B_Class;
-    } else if (random < 99999) {
+    } else if (random < base * 0.3) {
         category = C_Class;
-    } else if (random < 999999) {
+    } else if (random < base * 0.5) {
         category = D_Class;
     } else {
         category = E_Class;

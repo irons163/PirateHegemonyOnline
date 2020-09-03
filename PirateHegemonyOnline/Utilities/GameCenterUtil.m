@@ -132,9 +132,7 @@ static GameCenterUtil* instance;
                 NSData *saveSocreData = [NSKeyedArchiver archivedDataWithRootObject:scoreReporter];
                 [self storeScoreForLater:saveSocreData];
             }else{
-                NSLog(@"提交成功");
-                
-                
+                NSLog(@"提交成功");  
             }
         }];
     }
@@ -144,8 +142,9 @@ static GameCenterUtil* instance;
     GKGameCenterViewController *gameView = [[GKGameCenterViewController alloc] init];
     if(gameView != nil){
         gameView.gameCenterDelegate = self;
+        gameView.viewState = GKGameCenterViewControllerStateLeaderboards;
+        gameView.leaderboardIdentifier = @"com.irons.PirateHegemonyOnline";
         
-        [gameView setLeaderboardCategory:@"com.xxxx.test"];
         [gameView setLeaderboardTimeScope:GKLeaderboardTimeScopeAllTime];
         
         [viewController presentViewController:gameView animated:YES completion:^{
