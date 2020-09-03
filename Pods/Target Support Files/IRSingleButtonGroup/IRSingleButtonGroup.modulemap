@@ -1,0 +1,6 @@
+framework module IRSingleButtonGroup {
+  umbrella header "IRSingleButtonGroup-umbrella.h"
+
+  export *
+  module * { export * }
+}

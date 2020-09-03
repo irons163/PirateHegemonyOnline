@@ -3,32 +3,90 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B509012C2500DA5D0013B6BE /* UIColor+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = B50901292500DA5D0013B6BE /* UIColor+Helper.m */; };
+		B509012F2500E0AD0013B6BE /* Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = B509012E2500E0AD0013B6BE /* Utilities.m */; };
+		B50901342500E7FD0013B6BE /* DrawCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B50901322500E7FD0013B6BE /* DrawCardViewController.m */; };
+		B50901352500E7FD0013B6BE /* DrawCardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B50901332500E7FD0013B6BE /* DrawCardViewController.xib */; };
+		B50901382500F1050013B6BE /* GameCenterUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = B50901372500F1050013B6BE /* GameCenterUtil.m */; };
+		B509013C2500F29D0013B6BE /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B509013B2500F29D0013B6BE /* DBManager.m */; };
+		B509013F2500F4320013B6BE /* PirateHegemonyOnline.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B509013D2500F4320013B6BE /* PirateHegemonyOnline.xcdatamodeld */; };
+		B509014A2500F64A0013B6BE /* Arm+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = B50901482500F6490013B6BE /* Arm+CoreDataProperties.m */; };
+		B509014B2500F64A0013B6BE /* Arm+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = B50901492500F64A0013B6BE /* Arm+CoreDataClass.m */; };
+		B50901502500F6550013B6BE /* Arm+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = B509014D2500F6550013B6BE /* Arm+CoreDataClass.m */; };
+		B50901512500F6550013B6BE /* Arm+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = B509014F2500F6550013B6BE /* Arm+CoreDataProperties.m */; };
+		B50901542500FA730013B6BE /* ArmFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = B50901532500FA730013B6BE /* ArmFactory.m */; };
+		B509015725013C930013B6BE /* video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B509015625013C920013B6BE /* video.mp4 */; };
 		B5DD14F725008CF500E5F9F0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B5DD14F625008CF500E5F9F0 /* AppDelegate.m */; };
-		B5DD14FA25008CF500E5F9F0 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B5DD14F925008CF500E5F9F0 /* SceneDelegate.m */; };
 		B5DD14FD25008CF500E5F9F0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5DD14FC25008CF500E5F9F0 /* ViewController.m */; };
-		B5DD150025008CF500E5F9F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5DD14FE25008CF500E5F9F0 /* Main.storyboard */; };
 		B5DD150225008CF700E5F9F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5DD150125008CF700E5F9F0 /* Assets.xcassets */; };
 		B5DD150525008CF700E5F9F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5DD150325008CF700E5F9F0 /* LaunchScreen.storyboard */; };
 		B5DD150825008CF700E5F9F0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B5DD150725008CF700E5F9F0 /* main.m */; };
+		B5DD15142500915B00E5F9F0 /* ArmsDisplayCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5DD15122500915B00E5F9F0 /* ArmsDisplayCollectionViewController.m */; };
+		B5DD15152500915B00E5F9F0 /* ArmsDisplayCollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5DD15132500915B00E5F9F0 /* ArmsDisplayCollectionViewController.xib */; };
+		B5DD1521250092B200E5F9F0 /* ArmsDisplayViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B5DD1520250092B200E5F9F0 /* ArmsDisplayViewModel.m */; };
+		B5DD1525250092F300E5F9F0 /* ArmsDisplayCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B5DD1523250092F300E5F9F0 /* ArmsDisplayCollectionViewCell.m */; };
+		B5DD1526250092F300E5F9F0 /* ArmsDisplayCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5DD1524250092F300E5F9F0 /* ArmsDisplayCollectionViewCell.xib */; };
+		B5DD152C2500976100E5F9F0 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5DD152A2500976100E5F9F0 /* HomeViewController.m */; };
+		B5DD152D2500976100E5F9F0 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5DD152B2500976100E5F9F0 /* HomeViewController.xib */; };
+		B5DD15392500B7BF00E5F9F0 /* RootTabButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B5DD15382500B7BF00E5F9F0 /* RootTabButton.m */; };
+		F06B73B970DA59DCFD95FB78 /* Pods_PirateHegemonyOnline.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4665EF604FA4907AA98A2164 /* Pods_PirateHegemonyOnline.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4665EF604FA4907AA98A2164 /* Pods_PirateHegemonyOnline.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PirateHegemonyOnline.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DCAD6A25882BE9B448689A3 /* Pods-PirateHegemonyOnline.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PirateHegemonyOnline.debug.xcconfig"; path = "Target Support Files/Pods-PirateHegemonyOnline/Pods-PirateHegemonyOnline.debug.xcconfig"; sourceTree = "<group>"; };
+		901379C01D667D4772DDD6F7 /* Pods-PirateHegemonyOnline.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PirateHegemonyOnline.release.xcconfig"; path = "Target Support Files/Pods-PirateHegemonyOnline/Pods-PirateHegemonyOnline.release.xcconfig"; sourceTree = "<group>"; };
+		B50901292500DA5D0013B6BE /* UIColor+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Helper.m"; sourceTree = "<group>"; };
+		B509012A2500DA5D0013B6BE /* ColorDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorDefine.h; sourceTree = "<group>"; };
+		B509012B2500DA5D0013B6BE /* UIColor+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Helper.h"; sourceTree = "<group>"; };
+		B509012D2500E0AD0013B6BE /* Utilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Utilities.h; sourceTree = "<group>"; };
+		B509012E2500E0AD0013B6BE /* Utilities.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Utilities.m; sourceTree = "<group>"; };
+		B50901312500E7FD0013B6BE /* DrawCardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrawCardViewController.h; sourceTree = "<group>"; };
+		B50901322500E7FD0013B6BE /* DrawCardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawCardViewController.m; sourceTree = "<group>"; };
+		B50901332500E7FD0013B6BE /* DrawCardViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DrawCardViewController.xib; sourceTree = "<group>"; };
+		B50901362500F1040013B6BE /* GameCenterUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameCenterUtil.h; sourceTree = "<group>"; };
+		B50901372500F1050013B6BE /* GameCenterUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameCenterUtil.m; sourceTree = "<group>"; };
+		B509013A2500F29D0013B6BE /* DBManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBManager.h; sourceTree = "<group>"; };
+		B509013B2500F29D0013B6BE /* DBManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBManager.m; sourceTree = "<group>"; };
+		B509013E2500F4320013B6BE /* PirateHegemonyOnline.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PirateHegemonyOnline.xcdatamodel; sourceTree = "<group>"; };
+		B50901462500F6480013B6BE /* Arm+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Arm+CoreDataProperties.h"; path = "/Users/irons/github/PirateHegemonyOnline/PirateHegemonyOnline/Classes/Arms/Views/Arm+CoreDataProperties.h"; sourceTree = "<absolute>"; };
+		B50901472500F6490013B6BE /* Arm+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Arm+CoreDataClass.h"; path = "/Users/irons/github/PirateHegemonyOnline/PirateHegemonyOnline/Classes/Arms/Views/Arm+CoreDataClass.h"; sourceTree = "<absolute>"; };
+		B50901482500F6490013B6BE /* Arm+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "Arm+CoreDataProperties.m"; path = "/Users/irons/github/PirateHegemonyOnline/PirateHegemonyOnline/Classes/Arms/Views/Arm+CoreDataProperties.m"; sourceTree = "<absolute>"; };
+		B50901492500F64A0013B6BE /* Arm+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "Arm+CoreDataClass.m"; path = "/Users/irons/github/PirateHegemonyOnline/PirateHegemonyOnline/Classes/Arms/Views/Arm+CoreDataClass.m"; sourceTree = "<absolute>"; };
+		B509014C2500F6540013B6BE /* Arm+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Arm+CoreDataProperties.h"; path = "PirateHegemonyOnline/Classes/Arms/Views/Arm+CoreDataProperties.h"; sourceTree = SOURCE_ROOT; };
+		B509014D2500F6550013B6BE /* Arm+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Arm+CoreDataClass.m"; path = "PirateHegemonyOnline/Classes/Arms/Views/Arm+CoreDataClass.m"; sourceTree = SOURCE_ROOT; };
+		B509014E2500F6550013B6BE /* Arm+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Arm+CoreDataClass.h"; path = "PirateHegemonyOnline/Classes/Arms/Views/Arm+CoreDataClass.h"; sourceTree = SOURCE_ROOT; };
+		B509014F2500F6550013B6BE /* Arm+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Arm+CoreDataProperties.m"; path = "PirateHegemonyOnline/Classes/Arms/Views/Arm+CoreDataProperties.m"; sourceTree = SOURCE_ROOT; };
+		B50901522500FA730013B6BE /* ArmFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArmFactory.h; sourceTree = "<group>"; };
+		B50901532500FA730013B6BE /* ArmFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArmFactory.m; sourceTree = "<group>"; };
+		B50901552500FBA90013B6BE /* ArmCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArmCategory.h; sourceTree = "<group>"; };
+		B509015625013C920013B6BE /* video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video.mp4; sourceTree = "<group>"; };
 		B5DD14F225008CF500E5F9F0 /* PirateHegemonyOnline.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PirateHegemonyOnline.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5DD14F525008CF500E5F9F0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B5DD14F625008CF500E5F9F0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		B5DD14F825008CF500E5F9F0 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		B5DD14F925008CF500E5F9F0 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 		B5DD14FB25008CF500E5F9F0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		B5DD14FC25008CF500E5F9F0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		B5DD14FF25008CF500E5F9F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B5DD150125008CF700E5F9F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B5DD150425008CF700E5F9F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B5DD150625008CF700E5F9F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B5DD150725008CF700E5F9F0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B5DD15112500915B00E5F9F0 /* ArmsDisplayCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArmsDisplayCollectionViewController.h; sourceTree = "<group>"; };
+		B5DD15122500915B00E5F9F0 /* ArmsDisplayCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArmsDisplayCollectionViewController.m; sourceTree = "<group>"; };
+		B5DD15132500915B00E5F9F0 /* ArmsDisplayCollectionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArmsDisplayCollectionViewController.xib; sourceTree = "<group>"; };
+		B5DD151F250092B200E5F9F0 /* ArmsDisplayViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArmsDisplayViewModel.h; sourceTree = "<group>"; };
+		B5DD1520250092B200E5F9F0 /* ArmsDisplayViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArmsDisplayViewModel.m; sourceTree = "<group>"; };
+		B5DD1522250092F300E5F9F0 /* ArmsDisplayCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArmsDisplayCollectionViewCell.h; sourceTree = "<group>"; };
+		B5DD1523250092F300E5F9F0 /* ArmsDisplayCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArmsDisplayCollectionViewCell.m; sourceTree = "<group>"; };
+		B5DD1524250092F300E5F9F0 /* ArmsDisplayCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArmsDisplayCollectionViewCell.xib; sourceTree = "<group>"; };
+		B5DD15292500976100E5F9F0 /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		B5DD152A2500976100E5F9F0 /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		B5DD152B2500976100E5F9F0 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		B5DD15372500B7BF00E5F9F0 /* RootTabButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootTabButton.h; sourceTree = "<group>"; };
+		B5DD15382500B7BF00E5F9F0 /* RootTabButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootTabButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,17 +94,57 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F06B73B970DA59DCFD95FB78 /* Pods_PirateHegemonyOnline.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		404D57F6DED57C96E54497CF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4DCAD6A25882BE9B448689A3 /* Pods-PirateHegemonyOnline.debug.xcconfig */,
+				901379C01D667D4772DDD6F7 /* Pods-PirateHegemonyOnline.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		58538B4D0BB771F3EC6C5411 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4665EF604FA4907AA98A2164 /* Pods_PirateHegemonyOnline.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B50901302500E7B30013B6BE /* DrawCard */ = {
+			isa = PBXGroup;
+			children = (
+				B50901312500E7FD0013B6BE /* DrawCardViewController.h */,
+				B50901322500E7FD0013B6BE /* DrawCardViewController.m */,
+				B50901332500E7FD0013B6BE /* DrawCardViewController.xib */,
+			);
+			path = DrawCard;
+			sourceTree = "<group>";
+		};
+		B50901392500F2890013B6BE /* DB */ = {
+			isa = PBXGroup;
+			children = (
+				B509013A2500F29D0013B6BE /* DBManager.h */,
+				B509013B2500F29D0013B6BE /* DBManager.m */,
+				B509013D2500F4320013B6BE /* PirateHegemonyOnline.xcdatamodeld */,
+			);
+			path = DB;
+			sourceTree = "<group>";
+		};
 		B5DD14E925008CF500E5F9F0 = {
 			isa = PBXGroup;
 			children = (
 				B5DD14F425008CF500E5F9F0 /* PirateHegemonyOnline */,
 				B5DD14F325008CF500E5F9F0 /* Products */,
+				404D57F6DED57C96E54497CF /* Pods */,
+				58538B4D0BB771F3EC6C5411 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,19 +159,130 @@
 		B5DD14F425008CF500E5F9F0 /* PirateHegemonyOnline */ = {
 			isa = PBXGroup;
 			children = (
+				B509015625013C920013B6BE /* video.mp4 */,
+				B5DD150E25008F9900E5F9F0 /* Classes */,
+				B5DD150F25008FA000E5F9F0 /* Utilities */,
 				B5DD14F525008CF500E5F9F0 /* AppDelegate.h */,
 				B5DD14F625008CF500E5F9F0 /* AppDelegate.m */,
-				B5DD14F825008CF500E5F9F0 /* SceneDelegate.h */,
-				B5DD14F925008CF500E5F9F0 /* SceneDelegate.m */,
-				B5DD14FB25008CF500E5F9F0 /* ViewController.h */,
-				B5DD14FC25008CF500E5F9F0 /* ViewController.m */,
-				B5DD14FE25008CF500E5F9F0 /* Main.storyboard */,
 				B5DD150125008CF700E5F9F0 /* Assets.xcassets */,
 				B5DD150325008CF700E5F9F0 /* LaunchScreen.storyboard */,
 				B5DD150625008CF700E5F9F0 /* Info.plist */,
 				B5DD150725008CF700E5F9F0 /* main.m */,
 			);
 			path = PirateHegemonyOnline;
+			sourceTree = "<group>";
+		};
+		B5DD150E25008F9900E5F9F0 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				B5DD15352500B75F00E5F9F0 /* Root */,
+				B5DD15282500973100E5F9F0 /* Home */,
+				B5DD1527250093BA00E5F9F0 /* GameCenter */,
+				B5DD15102500907800E5F9F0 /* Arms */,
+				B50901302500E7B30013B6BE /* DrawCard */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		B5DD150F25008FA000E5F9F0 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				B50901392500F2890013B6BE /* DB */,
+				B509012D2500E0AD0013B6BE /* Utilities.h */,
+				B509012E2500E0AD0013B6BE /* Utilities.m */,
+				B509012A2500DA5D0013B6BE /* ColorDefine.h */,
+				B509012B2500DA5D0013B6BE /* UIColor+Helper.h */,
+				B50901292500DA5D0013B6BE /* UIColor+Helper.m */,
+				B50901362500F1040013B6BE /* GameCenterUtil.h */,
+				B50901372500F1050013B6BE /* GameCenterUtil.m */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		B5DD15102500907800E5F9F0 /* Arms */ = {
+			isa = PBXGroup;
+			children = (
+				B5DD1518250091CF00E5F9F0 /* ModelViews */,
+				B5DD15172500919700E5F9F0 /* Views */,
+				B5DD15162500918E00E5F9F0 /* Models */,
+				B5DD15112500915B00E5F9F0 /* ArmsDisplayCollectionViewController.h */,
+				B5DD15122500915B00E5F9F0 /* ArmsDisplayCollectionViewController.m */,
+				B5DD15132500915B00E5F9F0 /* ArmsDisplayCollectionViewController.xib */,
+			);
+			path = Arms;
+			sourceTree = "<group>";
+		};
+		B5DD15162500918E00E5F9F0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B509014E2500F6550013B6BE /* Arm+CoreDataClass.h */,
+				B509014D2500F6550013B6BE /* Arm+CoreDataClass.m */,
+				B509014C2500F6540013B6BE /* Arm+CoreDataProperties.h */,
+				B509014F2500F6550013B6BE /* Arm+CoreDataProperties.m */,
+				B50901522500FA730013B6BE /* ArmFactory.h */,
+				B50901532500FA730013B6BE /* ArmFactory.m */,
+				B50901552500FBA90013B6BE /* ArmCategory.h */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B5DD15172500919700E5F9F0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B50901462500F6480013B6BE /* Arm+CoreDataProperties.h */,
+				B50901472500F6490013B6BE /* Arm+CoreDataClass.h */,
+				B50901492500F64A0013B6BE /* Arm+CoreDataClass.m */,
+				B50901482500F6490013B6BE /* Arm+CoreDataProperties.m */,
+				B5DD1522250092F300E5F9F0 /* ArmsDisplayCollectionViewCell.h */,
+				B5DD1523250092F300E5F9F0 /* ArmsDisplayCollectionViewCell.m */,
+				B5DD1524250092F300E5F9F0 /* ArmsDisplayCollectionViewCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B5DD1518250091CF00E5F9F0 /* ModelViews */ = {
+			isa = PBXGroup;
+			children = (
+				B5DD151F250092B200E5F9F0 /* ArmsDisplayViewModel.h */,
+				B5DD1520250092B200E5F9F0 /* ArmsDisplayViewModel.m */,
+			);
+			path = ModelViews;
+			sourceTree = "<group>";
+		};
+		B5DD1527250093BA00E5F9F0 /* GameCenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = GameCenter;
+			sourceTree = "<group>";
+		};
+		B5DD15282500973100E5F9F0 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				B5DD15292500976100E5F9F0 /* HomeViewController.h */,
+				B5DD152A2500976100E5F9F0 /* HomeViewController.m */,
+				B5DD152B2500976100E5F9F0 /* HomeViewController.xib */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		B5DD15352500B75F00E5F9F0 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				B5DD15362500B78600E5F9F0 /* Views */,
+				B5DD14FB25008CF500E5F9F0 /* ViewController.h */,
+				B5DD14FC25008CF500E5F9F0 /* ViewController.m */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		B5DD15362500B78600E5F9F0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B5DD15372500B7BF00E5F9F0 /* RootTabButton.h */,
+				B5DD15382500B7BF00E5F9F0 /* RootTabButton.m */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,9 +292,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B5DD150B25008CF700E5F9F0 /* Build configuration list for PBXNativeTarget "PirateHegemonyOnline" */;
 			buildPhases = (
+				258725F31DDCBA8B5BC99F2E /* [CP] Check Pods Manifest.lock */,
 				B5DD14EE25008CF500E5F9F0 /* Sources */,
 				B5DD14EF25008CF500E5F9F0 /* Frameworks */,
 				B5DD14F025008CF500E5F9F0 /* Resources */,
+				B623C53CC87B573DAF43197A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,37 +344,90 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5DD15152500915B00E5F9F0 /* ArmsDisplayCollectionViewController.xib in Resources */,
 				B5DD150525008CF700E5F9F0 /* LaunchScreen.storyboard in Resources */,
+				B5DD1526250092F300E5F9F0 /* ArmsDisplayCollectionViewCell.xib in Resources */,
 				B5DD150225008CF700E5F9F0 /* Assets.xcassets in Resources */,
-				B5DD150025008CF500E5F9F0 /* Main.storyboard in Resources */,
+				B509015725013C930013B6BE /* video.mp4 in Resources */,
+				B50901352500E7FD0013B6BE /* DrawCardViewController.xib in Resources */,
+				B5DD152D2500976100E5F9F0 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		258725F31DDCBA8B5BC99F2E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PirateHegemonyOnline-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B623C53CC87B573DAF43197A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PirateHegemonyOnline/Pods-PirateHegemonyOnline-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PirateHegemonyOnline/Pods-PirateHegemonyOnline-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PirateHegemonyOnline/Pods-PirateHegemonyOnline-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B5DD14EE25008CF500E5F9F0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5DD1521250092B200E5F9F0 /* ArmsDisplayViewModel.m in Sources */,
+				B509012C2500DA5D0013B6BE /* UIColor+Helper.m in Sources */,
+				B509014B2500F64A0013B6BE /* Arm+CoreDataClass.m in Sources */,
+				B50901342500E7FD0013B6BE /* DrawCardViewController.m in Sources */,
+				B5DD15142500915B00E5F9F0 /* ArmsDisplayCollectionViewController.m in Sources */,
 				B5DD14FD25008CF500E5F9F0 /* ViewController.m in Sources */,
+				B509013F2500F4320013B6BE /* PirateHegemonyOnline.xcdatamodeld in Sources */,
+				B50901382500F1050013B6BE /* GameCenterUtil.m in Sources */,
+				B50901542500FA730013B6BE /* ArmFactory.m in Sources */,
+				B509014A2500F64A0013B6BE /* Arm+CoreDataProperties.m in Sources */,
+				B509013C2500F29D0013B6BE /* DBManager.m in Sources */,
+				B50901512500F6550013B6BE /* Arm+CoreDataProperties.m in Sources */,
 				B5DD14F725008CF500E5F9F0 /* AppDelegate.m in Sources */,
+				B509012F2500E0AD0013B6BE /* Utilities.m in Sources */,
 				B5DD150825008CF700E5F9F0 /* main.m in Sources */,
-				B5DD14FA25008CF500E5F9F0 /* SceneDelegate.m in Sources */,
+				B5DD1525250092F300E5F9F0 /* ArmsDisplayCollectionViewCell.m in Sources */,
+				B50901502500F6550013B6BE /* Arm+CoreDataClass.m in Sources */,
+				B5DD15392500B7BF00E5F9F0 /* RootTabButton.m in Sources */,
+				B5DD152C2500976100E5F9F0 /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		B5DD14FE25008CF500E5F9F0 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B5DD14FF25008CF500E5F9F0 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B5DD150325008CF700E5F9F0 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -287,11 +551,13 @@
 		};
 		B5DD150C25008CF700E5F9F0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4DCAD6A25882BE9B448689A3 /* Pods-PirateHegemonyOnline.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T6VV6T753H;
 				INFOPLIST_FILE = PirateHegemonyOnline/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,11 +570,13 @@
 		};
 		B5DD150D25008CF700E5F9F0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 901379C01D667D4772DDD6F7 /* Pods-PirateHegemonyOnline.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T6VV6T753H;
 				INFOPLIST_FILE = PirateHegemonyOnline/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -341,6 +609,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B509013D2500F4320013B6BE /* PirateHegemonyOnline.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B509013E2500F4320013B6BE /* PirateHegemonyOnline.xcdatamodel */,
+			);
+			currentVersion = B509013E2500F4320013B6BE /* PirateHegemonyOnline.xcdatamodel */;
+			path = PirateHegemonyOnline.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = B5DD14EA25008CF500E5F9F0 /* Project object */;
 }

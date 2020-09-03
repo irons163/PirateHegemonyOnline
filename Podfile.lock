@@ -1,0 +1,42 @@
+PODS:
+  - IRCollectionTableViewModel (1.0.1)
+  - IRSingleButtonGroup (1.0.0)
+  - IRTabbedPageViewController (1.0.0):
+    - Masonry
+  - MagicalRecord (2.4.0):
+    - MagicalRecord/Core (= 2.4.0)
+  - MagicalRecord/Core (2.4.0)
+  - Masonry (1.1.0)
+
+DEPENDENCIES:
+  - IRCollectionTableViewModel
+  - IRSingleButtonGroup
+  - IRTabbedPageViewController
+  - MagicalRecord (from `https://github.com/magicalpanda/MagicalRecord`)
+
+SPEC REPOS:
+  trunk:
+    - IRCollectionTableViewModel
+    - IRSingleButtonGroup
+    - IRTabbedPageViewController
+    - Masonry
+
+EXTERNAL SOURCES:
+  MagicalRecord:
+    :git: https://github.com/magicalpanda/MagicalRecord
+
+CHECKOUT OPTIONS:
+  MagicalRecord:
+    :commit: 6031f608b79c1d6802007aaed6efd100e11f59ba
+    :git: https://github.com/magicalpanda/MagicalRecord
+
+SPEC CHECKSUMS:
+  IRCollectionTableViewModel: 46af7fe12b374b004f760125147e1ca0a5c9946a
+  IRSingleButtonGroup: a688e6fede7296b87f505b56d7e9b877ade006e6
+  IRTabbedPageViewController: c384cad4049b97fcf23641f0154be80e433f704d
+  MagicalRecord: 1f22a766156474d9f46a9b1e1ce59ca9e37830fc
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+
+PODFILE CHECKSUM: 8fca3c993a78e86b79c8fe9dcd55a8a9587d7201
+
+COCOAPODS: 1.8.4

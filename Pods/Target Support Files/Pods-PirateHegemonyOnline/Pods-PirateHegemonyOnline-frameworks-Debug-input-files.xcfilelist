@@ -1,0 +1,6 @@
+${PODS_ROOT}/Target Support Files/Pods-PirateHegemonyOnline/Pods-PirateHegemonyOnline-frameworks.sh
+${BUILT_PRODUCTS_DIR}/IRCollectionTableViewModel/IRCollectionTableViewModel.framework
+${BUILT_PRODUCTS_DIR}/IRSingleButtonGroup/IRSingleButtonGroup.framework
+${BUILT_PRODUCTS_DIR}/IRTabbedPageViewController/IRTabbedPageViewController.framework
+${BUILT_PRODUCTS_DIR}/MagicalRecord/MagicalRecord.framework
+${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework

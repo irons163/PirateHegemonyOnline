@@ -1,0 +1,10 @@
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/IRCollectionTableViewModel" "${PODS_CONFIGURATION_BUILD_DIR}/IRSingleButtonGroup" "${PODS_CONFIGURATION_BUILD_DIR}/IRTabbedPageViewController" "${PODS_CONFIGURATION_BUILD_DIR}/MagicalRecord" "${PODS_CONFIGURATION_BUILD_DIR}/Masonry"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/IRCollectionTableViewModel/IRCollectionTableViewModel.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/IRSingleButtonGroup/IRSingleButtonGroup.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/IRTabbedPageViewController/IRTabbedPageViewController.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/MagicalRecord/MagicalRecord.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/Masonry/Masonry.framework/Headers"
+LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
+OTHER_LDFLAGS = $(inherited) -framework "CoreData" -framework "Foundation" -framework "IRCollectionTableViewModel" -framework "IRSingleButtonGroup" -framework "IRTabbedPageViewController" -framework "MagicalRecord" -framework "Masonry" -framework "UIKit"
+PODS_BUILD_DIR = ${BUILD_DIR}
+PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+PODS_PODFILE_DIR_PATH = ${SRCROOT}/.
+PODS_ROOT = ${SRCROOT}/Pods
+USE_RECURSIVE_SCRIPT_INPUTS_IN_SCRIPT_PHASES = YES

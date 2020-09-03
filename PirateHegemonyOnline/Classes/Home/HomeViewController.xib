@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController">
+            <connections>
+                <outlet property="getRandomClassMusketeerButton" destination="Qyg-ft-Bsj" id="Hpn-4h-ETk"/>
+                <outlet property="getSClassMusketeerButton" destination="4Al-TF-Um4" id="ewI-Qg-mef"/>
+                <outlet property="videoHolderView" destination="7no-wd-k4H" id="OoT-kY-SOv"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d44-Id-vL0">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zwm-nw-ctE">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="88"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fB1-3R-9hH">
+                                    <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gea-ht-BGQ">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="Gea-ht-BGQ" secondAttribute="trailing" id="DSh-5e-NFW"/>
+                                        <constraint firstItem="Gea-ht-BGQ" firstAttribute="leading" secondItem="fB1-3R-9hH" secondAttribute="leading" id="QN3-jC-PK0"/>
+                                        <constraint firstAttribute="bottom" secondItem="Gea-ht-BGQ" secondAttribute="bottom" id="Xnm-LH-cR8"/>
+                                        <constraint firstItem="Gea-ht-BGQ" firstAttribute="top" secondItem="fB1-3R-9hH" secondAttribute="top" id="bip-QZ-hOj"/>
+                                        <constraint firstAttribute="height" constant="44" id="jWj-uI-NgE"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" red="1" green="0.83529411764705885" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="fB1-3R-9hH" secondAttribute="trailing" id="H5I-37-DTs"/>
+                                <constraint firstItem="fB1-3R-9hH" firstAttribute="leading" secondItem="zwm-nw-ctE" secondAttribute="leading" id="NTh-pw-r7f"/>
+                                <constraint firstAttribute="bottom" secondItem="fB1-3R-9hH" secondAttribute="bottom" id="rg5-zo-emc"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7no-wd-k4H">
+                            <rect key="frame" x="32" y="118" width="311" height="175"/>
+                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="7no-wd-k4H" secondAttribute="height" multiplier="16:9" id="mPf-O0-5X3"/>
+                            </constraints>
+                        </view>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Nr7-6f-TYQ">
+                            <rect key="frame" x="30" y="333" width="315" height="44"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Al-TF-Um4">
+                                    <rect key="frame" x="0.0" y="0.0" width="315" height="44"/>
+                                    <color key="backgroundColor" red="0.16862745100000001" green="0.20784313730000001" blue="0.58823529409999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                    <state key="normal" title="領取你的 S級火槍兵">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="getSClassMusketeerButtonClick:" destination="-1" eventType="touchUpInside" id="9tR-yB-f9L"/>
+                                    </connections>
+                                </button>
+                                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qyg-ft-Bsj">
+                                    <rect key="frame" x="0.0" y="0.0" width="315" height="0.0"/>
+                                    <color key="backgroundColor" red="0.16862745100000001" green="0.20784313730000001" blue="0.58823529409999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                    <state key="normal" title="軍團招喚！抽卡">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="getRandomClassMusketeerClick:" destination="-1" eventType="touchUpInside" id="vdH-uk-uM5"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="oEQ-W6-bOp">
+                            <rect key="frame" x="30" y="548" width="315" height="184"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MGX-Ma-GIt">
+                                    <rect key="frame" x="0.0" y="0.0" width="315" height="48"/>
+                                    <color key="backgroundColor" red="0.16862745098039217" green="0.20784313725490194" blue="0.58823529411764708" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <state key="normal" title="開始與全世界玩家PK吧！">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="showGameCenterButtonClick:" destination="-1" eventType="touchUpInside" id="5Cw-68-EMv"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gac-pH-SvO">
+                                    <rect key="frame" x="0.0" y="68" width="315" height="48"/>
+                                    <color key="backgroundColor" red="0.16862745098039217" green="0.20784313725490194" blue="0.58823529411764708" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <state key="normal" title="《臺灣三部曲》電影群眾集資網站" image="taiwantrilogy">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="showTaiwantrilogyWebButtonClick:" destination="-1" eventType="touchUpInside" id="CTd-JH-EAQ"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="H5X-0M-KbZ">
+                                    <rect key="frame" x="0.0" y="136" width="315" height="48"/>
+                                    <color key="backgroundColor" red="0.16862745098039217" green="0.20784313725490194" blue="0.58823529411764708" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    <state key="normal" title="【大業配時代】流量就是一切！神秘廠商來襲！業配成功真相！feat.魏德聖" image="igotallday">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="showYoutubeVideoButtonClick:" destination="-1" eventType="touchUpInside" id="6fh-jQ-VoI"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.16470588235294117" green="0.70980392156862748" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="zwm-nw-ctE" firstAttribute="top" secondItem="d44-Id-vL0" secondAttribute="top" id="DmR-gs-OYz"/>
+                        <constraint firstItem="Nr7-6f-TYQ" firstAttribute="leading" secondItem="d44-Id-vL0" secondAttribute="leading" constant="30" id="F1r-Yg-gHi"/>
+                        <constraint firstAttribute="bottom" secondItem="oEQ-W6-bOp" secondAttribute="bottom" constant="80" id="H4j-fP-irD"/>
+                        <constraint firstAttribute="trailing" secondItem="zwm-nw-ctE" secondAttribute="trailing" id="K25-aG-n2t"/>
+                        <constraint firstAttribute="trailing" secondItem="oEQ-W6-bOp" secondAttribute="trailing" constant="30" id="RKM-k5-wd3"/>
+                        <constraint firstItem="oEQ-W6-bOp" firstAttribute="leading" secondItem="d44-Id-vL0" secondAttribute="leading" constant="30" id="bWD-Y9-uVV"/>
+                        <constraint firstItem="zwm-nw-ctE" firstAttribute="leading" secondItem="d44-Id-vL0" secondAttribute="leading" id="bhc-ht-peD"/>
+                        <constraint firstItem="Nr7-6f-TYQ" firstAttribute="top" secondItem="7no-wd-k4H" secondAttribute="bottom" constant="40" id="hgJ-NB-2kT"/>
+                        <constraint firstItem="7no-wd-k4H" firstAttribute="leading" secondItem="d44-Id-vL0" secondAttribute="leading" constant="32" id="pgG-fX-VzQ"/>
+                        <constraint firstItem="7no-wd-k4H" firstAttribute="top" secondItem="zwm-nw-ctE" secondAttribute="bottom" constant="30" id="u9G-rF-lyj"/>
+                        <constraint firstAttribute="trailing" secondItem="Nr7-6f-TYQ" secondAttribute="trailing" constant="30" id="yMF-X5-J0c"/>
+                        <constraint firstAttribute="trailing" secondItem="7no-wd-k4H" secondAttribute="trailing" constant="32" id="zbY-El-79U"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="d44-Id-vL0" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ASH-dd-wDi"/>
+                <constraint firstAttribute="bottom" secondItem="d44-Id-vL0" secondAttribute="bottom" id="DCf-LP-aNV"/>
+                <constraint firstAttribute="trailing" secondItem="d44-Id-vL0" secondAttribute="trailing" id="Zec-A8-cin"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="top" secondItem="fB1-3R-9hH" secondAttribute="top" id="fzm-b7-gZQ"/>
+                <constraint firstItem="d44-Id-vL0" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="i8A-QW-yt7"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="139" y="98"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="igotallday" width="48" height="48"/>
+        <image name="taiwantrilogy" width="48" height="48"/>
+    </resources>
+</document>

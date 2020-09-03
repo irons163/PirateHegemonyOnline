@@ -1,0 +1,6 @@
+framework module IRCollectionTableViewModel {
+  umbrella header "IRCollectionTableViewModel-umbrella.h"
+
+  export *
+  module * { export * }
+}

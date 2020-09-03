@@ -1,0 +1,6 @@
+framework module IRTabbedPageViewController {
+  umbrella header "IRTabbedPageViewController-umbrella.h"
+
+  export *
+  module * { export * }
+}

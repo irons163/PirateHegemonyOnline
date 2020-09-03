@@ -1,0 +1,5 @@
+${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IRCollectionTableViewModel.framework
+${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IRSingleButtonGroup.framework
+${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IRTabbedPageViewController.framework
+${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MagicalRecord.framework
+${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework
