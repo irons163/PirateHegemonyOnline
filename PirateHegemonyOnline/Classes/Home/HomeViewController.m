@@ -15,6 +15,7 @@
 
 @interface HomeViewController ()<DrawCardViewControllerDelegate> {
     AVPlayerLooper *playerLooper;
+    AVPlayerLayer* playerLayer;
 }
 
 @property AVPlayer *avPlayer;
@@ -47,7 +48,7 @@
     AVPlayerItem *playerItem = [AVPlayerItem playerItemWithURL:videoURL];
     playerLooper = [AVPlayerLooper playerLooperWithPlayer:self.avPlayer templateItem:playerItem];
 
-    AVPlayerLayer* playerLayer = [AVPlayerLayer playerLayerWithPlayer:self.avPlayer];
+    playerLayer = [AVPlayerLayer playerLayerWithPlayer:self.avPlayer];
     playerLayer.frame = self.videoHolderView.bounds;
     playerLayer.videoGravity = AVLayerVideoGravityResizeAspectFill;
     playerLayer.needsDisplayOnBoundsChange = YES;
@@ -65,6 +66,12 @@
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
+}
+
+- (void)viewDidLayoutSubviews {
+    [super viewDidLayoutSubviews];
+    
+    playerLayer.frame = self.videoHolderView.bounds;
 }
 
 - (void)updateUI {
