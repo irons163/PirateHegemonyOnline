@@ -3,23 +3,23 @@
 
 # PirateHegemonyOnline 
 
-最新力作 海賊爭霸Online, 下載就送 S級火槍兵。
-內建排行榜，集結軍團奪得最強海賊的頭銜吧！
+最新力作 海賊爭霸Online, 下載就送 S級火槍兵。</br>
+內建排行榜，集結軍團奪得最強海賊的頭銜吧！</br>
 
-感謝Android版作者AndyAWD先做出海賊爭霸Online，網址：
-[](https://play.google.com/store/apps/details?id=tw.com.andyawd.piratehegemonyonline)
+感謝Android版作者AndyAWD先做出海賊爭霸Online，網址：</br>
+https://play.google.com/store/apps/details?id=tw.com.andyawd.piratehegemonyonline </br>
 
-海賊爭霸Online GitHub
-iOS:
-https://github.com/irons163/PirateHegemonyOnline
-Android:
-https://github.com/AndyAWD/PirateHegemonyOnline
+海賊爭霸Online GitHub  </br>
+iOS: </br>
+https://github.com/irons163/PirateHegemonyOnline </br>
+Android: </br>
+https://github.com/AndyAWD/PirateHegemonyOnline </br>
 
-【臺灣400年系列電影】《臺灣三部曲》第一階段電影集資計畫
-https://taiwantrilogy.com/
+【臺灣400年系列電影】《臺灣三部曲》第一階段電影集資計畫 </br>
+https://taiwantrilogy.com/ </br>
 
-【大業配時代】流量就是一切！神秘廠商來襲！業配成功真相！feat.魏德聖
-https://www.youtube.com/watch?v=LUaYe_7cmxQ
+【大業配時代】流量就是一切！神秘廠商來襲！業配成功真相！feat.魏德聖 </br>
+https://www.youtube.com/watch?v=LUaYe_7cmxQ </br>
 
 
 ## Screenshots
