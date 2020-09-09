@@ -23,6 +23,10 @@ https://www.youtube.com/watch?v=LUaYe_7cmxQ </br>
 
 
 ## Screenshots
+| 抽卡 | 集卡庫 | 排行榜 |
+|:---:|:---:|
+| ![抽卡](./ScreenShots/demo5.png) | ![集卡庫](./ScreenShots/demo6.png) | ![排行榜](./ScreenShots/demo7.png) |
+
 | 5.5' | 6.5' |
 |:---:|:---:|
 | ![5.5'](./ScreenShots/demo1.png) | ![6.5'](./ScreenShots/demo2.png) |
